@@ -108,5 +108,5 @@ def train():
 
     similarity = cosine_similarity(vectors_of_movies_according_to_the_most_frequent_words)
     
-    open('similarity.pkl', 'wb').write(pickle.dumps(similarity))
+    open('similarity.pkl', 'wb').write(pickle.dumps(similarity,protocol=pickle.HIGHEST_PROTOCOL))
     
